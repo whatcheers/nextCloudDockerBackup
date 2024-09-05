@@ -1,6 +1,7 @@
 # nextCloudDockerBackup
 
-This project provides a robust backup solution for Nextcloud instances running in Docker containers. The script performs incremental backups of the Nextcloud data directory, configuration files, and PostgreSQL database, ensuring data integrity and efficient use of storage.
+This project provides a robust backup solution for Nextcloud instances running in Docker containers using the default nextcloud docker installation method for Ubuntu 22.04. 
+The script performs incremental backups of the Nextcloud data directory, configuration files, and PostgreSQL database, ensuring data integrity and efficient use of storage.
 
 ## Features
 
@@ -19,6 +20,16 @@ This project provides a robust backup solution for Nextcloud instances running i
 ## Installation
 
 1. Clone this repository to your backup server:
-   ```bash
+  
    git clone https://github.com/yourusername/nextCloudDockerBackup.git
+   cd nextCloudDockerBackup
+   chmod +x nextCloudBackup.sh
+   nano nextCloudBackup.sh
+       BACKUP_DEST="/Data/backup"  #SET BACKUP DESTINATION
+   sh nextCloudDockerBackup
 
+Add to cron to run automatically if desired. 
+
+
+
+      
