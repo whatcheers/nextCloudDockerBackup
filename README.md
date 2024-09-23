@@ -22,11 +22,15 @@ The script performs incremental backups of the Nextcloud data directory, configu
 1. Clone this repository to your backup server:
   
    git clone https://github.com/yourusername/nextCloudDockerBackup.git
+   
    cd nextCloudDockerBackup
+   
    chmod +x nextCloudBackup.sh
+   
    nano nextCloudBackup.sh
        BACKUP_DEST="/Data/backup"  #SET BACKUP DESTINATION
-   sh nextCloudDockerBackup
+
+    sh nextCloudDockerBackup
 
 Add to cron to run automatically if desired. 
 
